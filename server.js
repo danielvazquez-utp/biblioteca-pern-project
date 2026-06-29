@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
     });
 });
 
+// Rutas de Usuarios
+const usuarioRoutes = require('./routes/usuario');
+app.use('/api/usuarios', usuarioRoutes);
+
 // Lanzamiento del servicio
 // visibilidad del puerto
 
